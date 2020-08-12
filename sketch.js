@@ -47,6 +47,7 @@ function setup(){
 }
 
 function draw(){
+    Engine.update(engine);
     if(backgroundImg)
         background(backgroundImg);
     
@@ -55,7 +56,6 @@ function draw(){
         fill("white")
         text("Score  " + score, width-300, 50)
     
-    Engine.update(engine);
     //strokeWeight(4);
     box1.display();
     box2.display();
